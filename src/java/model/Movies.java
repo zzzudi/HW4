@@ -3,25 +3,26 @@ package model;
 
 
 public class Movies {
-    
-    private int movieID;
-    private String Name;
-    private int Year;
-    private String moviecategory;
 
-      public Movies() {
+    private int movieID;
+    private String movieName;
+    private int movieYear;
+    private String movieCategory;
+
+    
+       public Movies() {
         this.movieID = 0;
-        this.Name = "";
-        this.Year = 0;
-        this.moviecategory = "";
-      }
-    
-    
-    public Movies(int movieID, String Name, int Year, String category) {
+        this.movieName = ""; 
+        this.movieYear = 0;
+        this.movieCategory = ""; 
+       }
+        
+        
+   public Movies(int movieID, String movieName, int movieYear, String movieCategory) {
         this.movieID = movieID;
-        this.Name = Name;
-        this.Year = Year;
-        this.moviecategory = category;
+        this.movieName = movieName;
+        this.movieYear = movieYear;
+        this.movieCategory = movieCategory; 
     }
 
     public int getMovieID() {
@@ -32,37 +33,34 @@ public class Movies {
         this.movieID = movieID;
     }
 
-    public String getName() {
-        return Name;
+    public String getMovieName() {
+        return movieName;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setMovieName(String movieName) {
+        this.movieName = movieName;
     }
 
-    public int getYear() {
-        return Year;
+    public int getMovieYear() {
+        return movieYear;
     }
 
-    public void setYear(int Year) {
-        this.Year = Year;
+    public void setMovieYear(int movieYear) {
+        this.movieYear = movieYear;
     }
 
-    public String getmoviecategory() {
-        return moviecategory;
+    public String getMovieCategory() {
+        return movieCategory;
     }
 
-    public void setmoviecategory(String category) {
-        this.moviecategory = category;
+    public void setMovieCategory(String movieCategory) {
+        this.movieCategory = movieCategory;
     }
 
     @Override
     public String toString() {
-        return "Movies{" + "movieID=" + movieID + ", Name=" + Name + ", Year=" + Year + ", moviecategory=" + moviecategory + '}';
+        return "Movies{" + "movieID=" + movieID + ", movieName=" + movieName + ", movieYear=" + movieYear + ", movieCategory=" + movieCategory + '}';
     }
-    
-    
-    
-    
+   
     
 }
